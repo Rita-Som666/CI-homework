@@ -56,9 +56,26 @@
 
                 </executions>
 
+                <configuration>
+                    <rules>
+                        <rule>
+                            <element>BUNDLE</element>
+                            <limits>
+                                <limit>
+                                    <counter>LINE</counter>
+                                    <value>COVERED-RATIO</value>
+                                    <minimum>0.99</minimum>
+                                </limit>
+                            </limits>
+                        </rule>
+                    </rules>
+                </configuration>
+
             </plugin>
 
         </plugins>
+
+
     </build>
 
 
